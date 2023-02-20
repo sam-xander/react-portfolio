@@ -2,10 +2,10 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Work from "./components/Work";
-import Contact from "./components/Contact";
+import Hero from "./pages/Hero";
+import About from "./pages/About";
+import Work from "./pages/Work";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route exact to="/" element={<Hero />} />
+        <Route to="/" element={<Hero />} />
         <Route to="/about" element={<About />} />
         <Route to="/work" element={<Work />} />
         <Route to="/contact" element={<Contact />} />

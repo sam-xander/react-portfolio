@@ -1,4 +1,4 @@
-import NavLink from "./NavLink";
+import NavLinkItem from "./NavLinkItem";
 
 function Nav() {
   const routes = [
@@ -15,9 +15,7 @@ function Nav() {
   return (
     <nav className="header-nav">
       {routes.map(({ name, path }) => (
-        <div key={name}>
-          <NavLink path={path} />
-        </div>
+        <NavLinkItem key={name} path={path} />
       ))}
     </nav>
   );
