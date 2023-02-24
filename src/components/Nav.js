@@ -3,9 +3,6 @@ import NavLinkItem from "./NavLinkItem";
 function Nav() {
   const routes = [
     {
-      path: "about",
-    },
-    {
       path: "work",
     },
     {
@@ -14,8 +11,8 @@ function Nav() {
   ];
   return (
     <nav className="header-nav">
-      {routes.map(({ name, path }) => (
-        <NavLinkItem key={name} path={path} />
+      {routes.map(({ path }) => (
+        <NavLinkItem key={path} path={path} />
       ))}
     </nav>
   );
