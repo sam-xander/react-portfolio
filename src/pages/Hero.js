@@ -1,78 +1,98 @@
 import { Gallery } from "react-grid-gallery";
 
+import PhotoAlbum from "react-photo-album";
+
 function Hero() {
   const images = [
     {
       src: "/images/gallery/modern-website-concept-1.jpg",
       width: 1920,
       height: 1080,
-      caption: "Modern Website Design",
     },
     {
       src: "/images/gallery/creative-website-concept-1.png",
       width: 1920,
       height: 1080,
-      caption: "Creative Website Design",
     },
     {
       src: "/images/gallery/Cypher-window-min.png",
       width: 1903,
       height: 960,
-      caption: "Cypher Dashboard Design",
     },
     {
       src: "/images/gallery/artist-portfolio-1.png",
       width: 1920,
       height: 1080,
-      caption: "Artist Portfolio Design",
     },
     {
       src: "/images/gallery/cypher-one-1.png",
       width: 1920,
       height: 1080,
-      caption: "Cypher One Page Design",
     },
     {
       src: "/images/gallery/playtime-1.png",
       width: 1920,
       height: 1080,
-      caption: "Video Game Search Platform Design",
-    },
-    {
-      src: "/images/gallery/cypher-features-min.png",
-      width: 1920,
-      height: 1080,
-      caption: "Cypher Features Graphic",
-    },
-    {
-      src: "/images/gallery/cs logo-min.png",
-      width: 4500,
-      height: 4500,
-      caption: "Cypher Features Graphic",
-    },
-    {
-      src: "/images/gallery/cypher-project-1.png",
-      width: 2005,
-      height: 2629,
-      caption: "Cypher Features Graphic",
-    },
-    {
-      src: "/images/gallery/cypher-dashboard-announcement copy-min.png",
-      width: 1920,
-      height: 1080,
-      caption: "Cypher Features Graphic",
     },
     {
       src: "/images/gallery/get-assessed-1-min.png",
       width: 1654,
       height: 2339,
-      caption: "Cypher Features Graphic",
+    },
+    {
+      src: "/images/gallery/cypher-features-min.png",
+      width: 1920,
+      height: 1080,
+    },
+    {
+      src: "/images/gallery/cypher-project-1.png",
+      width: 2005,
+      height: 2629,
+    },
+    {
+      src: "/images/gallery/cypher-dashboard-announcement copy-min.png",
+      width: 1920,
+      height: 1080,
     },
     {
       src: "/images/gallery/Crowdsurf-report.png",
       width: 1654,
       height: 2339,
-      caption: "Cypher Features Graphic",
+    },
+    {
+      src: "/images/gallery/10k Followers-min.png",
+      width: 1600,
+      height: 900,
+    },
+    {
+      src: "/images/gallery/artist-portfolio-2.png",
+      width: 1920,
+      height: 2312,
+    },
+    {
+      src: "/images/gallery/banner 1_alt-min.png",
+      width: 1232,
+      height: 1552,
+    },
+    {
+      src: "/images/gallery/2K-followers-min.png",
+      width: 1080,
+      height: 1920,
+    },
+    {
+      src: "/images/gallery/1.5K-followers-min.png",
+      width: 1080,
+      height: 1920,
+    },
+    {
+      src: "/images/gallery/details_2_alt-min.jpg",
+      width: 1232,
+      height: 1352,
+    },
+    {
+      src: "/images/gallery/details_3_alt-min.jpg",
+      width: 1232,
+      height: 1352,
     },
   ];
 
@@ -104,12 +124,7 @@ function Hero() {
         </div>
       </section>
       <section className="gallery-section">
-        <Gallery
-          images={images}
-          enableImageSelection={false}
-          rowHeight={270}
-          margin={0}
-        />
+        <PhotoAlbum layout="rows" photos={images} />
       </section>
     </>
   );

@@ -276,6 +276,11 @@ section.hero-section {
   gap: 1rem;
 }
 
+.gallery-section {
+  padding: 20px;
+  background: #323232;
+}
+
 footer {
   text-align: center;
   margin-top: auto;
