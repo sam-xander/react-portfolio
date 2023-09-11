@@ -1,5 +1,3 @@
-import { Gallery } from "react-grid-gallery";
-
 import PhotoAlbum from "react-photo-album";
 
 function Hero() {
