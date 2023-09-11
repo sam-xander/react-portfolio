@@ -1,18 +1,78 @@
-import { Link } from "react-router-dom";
+import { Gallery } from "react-grid-gallery";
 
 function Hero() {
-  const links = [
+  const images = [
     {
-      name: "GitHub",
-      to: "https://github.com/sam-xander",
+      src: "/images/gallery/modern-website-concept-1.jpg",
+      width: 1920,
+      height: 1080,
+      caption: "Modern Website Design",
     },
     {
-      name: "LinkedIn",
-      to: "https://www.linkedin.com/in/samxander/",
+      src: "/images/gallery/creative-website-concept-1.png",
+      width: 1920,
+      height: 1080,
+      caption: "Creative Website Design",
     },
     {
-      name: "CV",
-      to: "https://drive.google.com/file/d/12-ChXRcC867ltGTeO27IkwQoG5O3IyD-/view?usp=sharing",
+      src: "/images/gallery/Cypher-window-min.png",
+      width: 1903,
+      height: 960,
+      caption: "Cypher Dashboard Design",
+    },
+    {
+      src: "/images/gallery/artist-portfolio-1.png",
+      width: 1920,
+      height: 1080,
+      caption: "Artist Portfolio Design",
+    },
+    {
+      src: "/images/gallery/cypher-one-1.png",
+      width: 1920,
+      height: 1080,
+      caption: "Cypher One Page Design",
+    },
+    {
+      src: "/images/gallery/playtime-1.png",
+      width: 1920,
+      height: 1080,
+      caption: "Video Game Search Platform Design",
+    },
+    {
+      src: "/images/gallery/cypher-features-min.png",
+      width: 1920,
+      height: 1080,
+      caption: "Cypher Features Graphic",
+    },
+    {
+      src: "/images/gallery/cs logo-min.png",
+      width: 4500,
+      height: 4500,
+      caption: "Cypher Features Graphic",
+    },
+    {
+      src: "/images/gallery/cypher-project-1.png",
+      width: 2005,
+      height: 2629,
+      caption: "Cypher Features Graphic",
+    },
+    {
+      src: "/images/gallery/cypher-dashboard-announcement copy-min.png",
+      width: 1920,
+      height: 1080,
+      caption: "Cypher Features Graphic",
+    },
+    {
+      src: "/images/gallery/get-assessed-1-min.png",
+      width: 1654,
+      height: 2339,
+      caption: "Cypher Features Graphic",
+    },
+    {
+      src: "/images/gallery/Crowdsurf-report.png",
+      width: 1654,
+      height: 2339,
+      caption: "Cypher Features Graphic",
     },
   ];
 
@@ -28,33 +88,28 @@ function Hero() {
         <div className="hero-text-container">
           <div className="hero-text">
             <h2>
-              <span>I'M SAM,</span>
+              <span>DESIGNER+</span>
+              <br />
+              DEVELOPER
             </h2>
-            <h2>FRONT-END DEVELOPER</h2>
+            <a
+              href="https://www.behance.net/samxander"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              VIEW WORK →
+            </a>
           </div>
         </div>
       </section>
-      <section className="hero-section-two">
-        <div>
-          {links.map((link) => (
-            <Link
-              key={link.name}
-              to={link.to}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3>{link.name}</h3>
-            </Link>
-          ))}
-        </div>
-      </section>
-      <section className="hero-section-three">
-        <div>
-          <h4>
-            I am a motivated Front-End Developer and Digital Designer passionate
-            about building beautiful and intuitive websites and applications!
-          </h4>
-        </div>
+      <section className="gallery-section">
+        <Gallery
+          images={images}
+          enableImageSelection={false}
+          rowHeight={270}
+          margin={0}
+        />
       </section>
     </>
   );

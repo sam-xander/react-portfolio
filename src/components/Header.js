@@ -5,12 +5,9 @@ function Header() {
   return (
     <header>
       <div className="header-container">
-        <Link to="/">
-          <h1 className="header-logo">
-            SAM <span>XANDER</span>
-          </h1>
-        </Link>
-        <Nav />
+        <h1 className="header-logo">
+          SAM <span>XANDER</span>
+        </h1>
       </div>
     </header>
   );
