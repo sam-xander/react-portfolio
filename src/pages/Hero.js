@@ -99,7 +99,18 @@ function Hero() {
       </section>
       <Services />
       <section className="gallery-section">
-        <PhotoAlbum layout="rows" photos={images} />
+        <PhotoAlbum layout="rows" photos={images}>
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image.src}
+              width={image.width}
+              height={image.height}
+              alt={`Gallery ${index + 1}`}
+              loading="lazy" // Add the loading="lazy" attribute
+            />
+          ))}
+        </PhotoAlbum>
       </section>
     </>
   );
