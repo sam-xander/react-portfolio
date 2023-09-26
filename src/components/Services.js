@@ -42,7 +42,8 @@ function Services() {
           </div>
         </a>
 
-        {/* <a href="/" className="card">
+        {/* Keep the card comments for future use
+        <a href="/" className="card">
           <div className="card-border"></div>
           <div className="card-content">
             <i className="fas fa-cogs fa-2x"></i>
