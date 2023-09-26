@@ -1,52 +1,100 @@
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 function Contact() {
+  const [result, setResult] = useState("");
+  const [color, setColor] = useState("text-gray-500");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const object = {};
+    formData.forEach((value, key) => {
+      object[key] = value;
+    });
+    const json = JSON.stringify(object);
+
+    try {
+      let response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
+
+      let data = await response.json();
+      setResult(data.message);
+      setColor(response.status === 200 ? "text-green-500" : "text-red-500");
+    } catch (error) {
+      console.log(error);
+      setResult("Something went wrong!");
+    }
+  };
+
   return (
-    <section class="contact-section" id="contact">
-      <div class="contact-container">
-        <h2>CONTACT ME</h2>
-        <br />
-        <div class="contact-grid">
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input
-              type="hidden"
-              name="access_key"
-              value="66aa47dc-a6f8-4004-a69b-76c4c67a76fe"
-            />
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
+    <section className="contact-section" id="contact">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        onSubmit={handleSubmit}
+      >
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+        <input
+          type="hidden"
+          name="subject"
+          value="New Submission from Web3Forms"
+        />
+        <input type="checkbox" name="botcheck" id="" style="display: none;" />
 
-            <label for="email">E-mail</label>
-            <input type="text" id="email" name="email" required />
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            <input
-              type="hidden"
-              name="redirect"
-              value="https://web3forms.com/success"
-            />
-
-            <input class="submit" type="submit" value="SUBMIT" />
-          </form>
-          <aside>
-            <h6>GitHub</h6>
-            <Link to="https://github.com/sam-xander" target="_blank">
-              github.com/sam-xander
-            </Link>
-            <hr />
-            <h6>LinkedIn</h6>
-            <Link to="https://www.linkedin.com/in/samxander/" target="_blank">
-              linkedin.com/in/samxander/
-            </Link>
-            <hr />
-            <h6>E-mail</h6>
-            <Link to="https://github.com/sam-xander" target="_blank">
-              sam@samxander.com
-            </Link>
-          </aside>
+        <div class="mb-6">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="John Doe"
+            required
+          />
         </div>
-      </div>
+        <div class="mb-6">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="you@company.com"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <label for="phone">Phone Number</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="+1 (555) 1234-567"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <label for="message">Your Message</label>
+
+          <textarea
+            rows="5"
+            name="message"
+            id="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </div>
+
+        <p id="result"></p>
+        <div>
+          <button type="submit">Send Message</button>
+        </div>
+        <p id="result">{result}</p>
+      </form>
     </section>
   );
 }

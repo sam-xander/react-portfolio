@@ -1,4 +1,5 @@
 import PhotoAlbum from "react-photo-album";
+import Services from "../components/Services";
 
 function Hero() {
   const images = [
@@ -121,6 +122,7 @@ function Hero() {
           </div>
         </div>
       </section>
+      <Services />
       <section className="gallery-section">
         <PhotoAlbum layout="rows" photos={images} />
       </section>
