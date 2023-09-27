@@ -4,7 +4,7 @@ import Services from "../components/Services";
 function Hero() {
   const images = [
     {
-      src: "https://res.cloudinary.com/dzqnbbola/image/upload/v1695768421/modern-website-concept-1.webp",
+      src: "https://res.cloudinary.com/dzqnbbola/image/upload/v1695772307/Capture-Everything_c6uvlm.webp",
       width: 1920,
       height: 1080,
     },
@@ -34,7 +34,7 @@ function Hero() {
       height: 1080,
     },
     {
-      src: "https://res.cloudinary.com/dzqnbbola/image/upload/v1695768376/cypher-project-1.webp",
+      src: "https://res.cloudinary.com/dzqnbbola/image/upload/v1695772575/cypher-project-page_gs4kbn.png",
       width: 2005,
       height: 2629,
     },
@@ -44,7 +44,7 @@ function Hero() {
       height: 1080,
     },
     {
-      src: "https://res.cloudinary.com/dzqnbbola/image/upload/v1695768374/Crowdsurf-report.webp",
+      src: "https://res.cloudinary.com/dzqnbbola/image/upload/v1695771945/Crowdsurf-report_jtmbjh.webp",
       width: 1654,
       height: 2339,
     },
@@ -54,7 +54,7 @@ function Hero() {
       height: 900,
     },
     {
-      src: "https://res.cloudinary.com/dzqnbbola/image/upload/v1695768372/banner_1_alt-min.webp",
+      src: "https://res.cloudinary.com/dzqnbbola/image/upload/v1695772747/banner_1_alt_h0xoyu.webp",
       width: 1232,
       height: 1552,
     },
