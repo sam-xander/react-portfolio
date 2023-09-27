@@ -189,7 +189,7 @@ section.hero-section {
 }
 
 .hero-grid-one {
-  background-image: url("https://res.cloudinary.com/dzqnbbola/image/upload/f_auto,q_auto:low/v1695764814/hero-image_sio3ns.webp");
+  background-image: url("https://res.cloudinary.com/dzqnbbola/image/upload/f_auto,q_auto:low/v1695764814/hero-image_sio3ns.webp?cache=30d");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -202,7 +202,7 @@ section.hero-section {
 }
 
 .hero-grid-two > div {
-  background-image: url("https://res.cloudinary.com/dzqnbbola/image/upload/f_auto,q_auto:low/v1695764894/hero-image-small_fipyyq.webp");
+  background-image: url("https://res.cloudinary.com/dzqnbbola/image/upload/f_auto,q_auto:low/v1695764894/hero-image-small_fipyyq.webp?cache=30d");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
