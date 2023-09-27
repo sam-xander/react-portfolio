@@ -189,11 +189,12 @@ section.hero-section {
 }
 
 .hero-grid-one {
-  background-image: url("https://res.cloudinary.com/dzqnbbola/image/upload/f_auto,q_auto:low/v1695764814/hero-image_sio3ns.webp?cache=30d");
+  background-image: url("https://res.cloudinary.com/dzqnbbola/image/upload/f_auto,q_35/v1695764814/hero-image_sio3ns.webp?cache=30d");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   z-index: 1;
+  opacity: 60%;
 }
 
 .hero-grid-two {
@@ -202,11 +203,12 @@ section.hero-section {
 }
 
 .hero-grid-two > div {
-  background-image: url("https://res.cloudinary.com/dzqnbbola/image/upload/f_auto,q_auto:low/v1695764894/hero-image-small_fipyyq.webp?cache=30d");
+  background-image: url("https://res.cloudinary.com/dzqnbbola/image/upload/f_auto,q_35/v1695764894/hero-image-small_fipyyq.webp?cache=30d");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   width: 60%;
+  opacity: 60%;
 }
 
 .hero-text-container {
