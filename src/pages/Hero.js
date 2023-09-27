@@ -34,7 +34,7 @@ function Hero() {
       height: 1080,
     },
     {
-      src: "https://res.cloudinary.com/dzqnbbola/image/upload/v1695772575/cypher-project-page_gs4kbn.png",
+      src: "https://res.cloudinary.com/dzqnbbola/image/upload/v1695773013/cypher-project-page_dqxzeb.webp",
       width: 2005,
       height: 2629,
     },
