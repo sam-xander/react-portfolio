@@ -2,6 +2,8 @@ import PhotoAlbum from "react-photo-album";
 import Services from "../components/Services";
 
 function Hero() {
+  const cacheDuration = "30d"; // Specify your cache duration
+
   const images = [
     {
       src: "https://res.cloudinary.com/dzqnbbola/image/upload/f_auto,q_auto:good/v1695772307/Capture-Everything_c6uvlm.webp",
@@ -70,6 +72,11 @@ function Hero() {
     },
   ];
 
+  const imagesWithCache = images.map((image) => ({
+    ...image,
+    src: `${image.src}?cache=${cacheDuration}`,
+  }));
+
   return (
     <>
       <section className="hero-section">
@@ -99,7 +106,7 @@ function Hero() {
       </section>
       <Services />
       <section className="gallery-section">
-        <PhotoAlbum layout="rows" photos={images}>
+        <PhotoAlbum layout="rows" photos={imagesWithCache}>
           {images.map((image, index) => (
             <img
               key={index}
