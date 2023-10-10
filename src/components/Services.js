@@ -29,7 +29,7 @@ function Services() {
     <div className="services">
       <div id="cards">
         <a
-          href="https://www.behance.net/samxander"
+          href="https://dribbble.com/samxander"
           rel="noreferrer"
           target="_blank"
           className="card"
@@ -37,38 +37,23 @@ function Services() {
           <div className="card-border"></div>
           <div className="card-content">
             <i className="fas fa-laptop fa-2x"></i>
-            <h3 className="services-h3">Portfolio</h3>
+            <h3 className="services-h3">View Portfolio</h3>
             <p>Explore a selection of my creative projects.</p>
           </div>
         </a>
-
-        {/* Keep the card comments for future use
-        <a href="/" className="card">
+        <a
+          href="mailto:sam@samxander.com"
+          rel="noreferrer"
+          target="_blank"
+          className="card"
+        >
           <div className="card-border"></div>
           <div className="card-content">
-            <i className="fas fa-cogs fa-2x"></i>
-            <h3 className="services-h3">Services</h3>
-            <p>Discover how I can assist you.</p>
+            <i className="fas fa-laptop fa-2x"></i>
+            <h3 className="services-h3">Contact Me</h3>
+            <p>Send me an email to start the conversation.</p>
           </div>
         </a>
-
-        <a href="/" className="card">
-          <div className="card-border"></div>
-          <div className="card-content">
-            <i className="fas fa-paint-brush fa-2x"></i>
-            <h3 className="services-h3">Process</h3>
-            <p>Learn about my professional workflow.</p>
-          </div>
-        </a>
-
-        <a href="/" className="card">
-          <div className="card-border"></div>
-          <div className="card-content">
-            <i className="fas fa-envelope fa-2x"></i>
-            <h3 className="services-h3">Contact</h3>
-            <p>Get in touch with me.</p>
-          </div>
-        </a> */}
       </div>
     </div>
   );
