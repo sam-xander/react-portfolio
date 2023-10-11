@@ -22,7 +22,7 @@ function Hero() {
               DEVELOPER
             </h2>
             <a
-              href="https://dribbble.com/samxander"
+              href="https://portfolio.samxander.com/"
               target="_blank"
               rel="noreferrer"
               className="link"
