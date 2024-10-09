@@ -29,7 +29,7 @@ function Services() {
     <div className="services">
       <div id="cards">
         <a
-          href="https://portfolio.samxander.com/"
+          href="https://dribbble.com/samxander"
           rel="noreferrer"
           target="_blank"
           className="card"
