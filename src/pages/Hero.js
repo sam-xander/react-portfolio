@@ -17,12 +17,12 @@ function Hero() {
         <div className="hero-text-container">
           <div className="hero-text">
             <h2>
-              <span>DESIGNER+</span>
+              <span>UI/UX DESIGNER +</span>
               <br />
               DEVELOPER
             </h2>
             <a
-              href="https://portfolio.samxander.com/"
+              href="https://dribbble.com/samxander"
               target="_blank"
               rel="noreferrer"
               className="link"

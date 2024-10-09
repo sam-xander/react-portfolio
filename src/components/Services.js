@@ -42,7 +42,7 @@ function Services() {
           </div>
         </a>
         <a
-          href="mailto:sam@samxander.com"
+          href="https://github.com/sam-xander"
           rel="noreferrer"
           target="_blank"
           className="card"
@@ -50,8 +50,8 @@ function Services() {
           <div className="card-border"></div>
           <div className="card-content">
             <i className="fas fa-laptop fa-2x"></i>
-            <h3 className="services-h3">Contact Me</h3>
-            <p>Send me an email to start the conversation.</p>
+            <h3 className="services-h3">View GitHub</h3>
+            <p>Check out my front-end work.</p>
           </div>
         </a>
       </div>
